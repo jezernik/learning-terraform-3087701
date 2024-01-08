@@ -26,7 +26,7 @@ resource "aws_instance" "blog" {
     Name = "HelloWorld"
   }
 
-  vpc_security_group_ids = [module.blog.sg.security_group_id]
+  vpc_security_group_ids = [module.blog_new.sg.security_group_id]
 }
 
 module "blog_sg" {
